@@ -6,7 +6,7 @@ export const HeaderComponent = () => {
   return (
     <div className='header'>
         
-        <h1>Virat Kohli</h1>
+        <h1>MERN Project</h1>
         <img src={virat} alt='Virat Kohli' className='virat' />
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const MapDemo3 = () => {
+export const MapDemo5 = () => {
     var students =[
         {id:1,name:"honey",age:23,marks:78,city:"ahmedabad",gender:"female"},
         {id:2,name:"helly",age:25,marks:98,city:"ahmedabad",gender:"female"},
@@ -8,8 +8,8 @@ export const MapDemo3 = () => {
     ]
   return (
     <div style={{textAlign:"center"}}>
-        <h1>Map Demo3</h1>
-        <table border ="2" align='center'>
+        <h1>Map Demo5</h1>
+        <table className='table'>
             <thead>
                 <tr>
                     <th>ID</th>
@@ -23,11 +23,11 @@ export const MapDemo3 = () => {
             <tbody>
                 {
                     students.map((st) => {
-                        return <tr>
+                        return <tr style={{backgroundColor:st.gender =="female" && "pink"}}>
                             <td>{st.id}</td>
                             <td>{st.name}</td>
-                            <td>{st.age}</td>
-                            <td>{st.marks}</td>
+                            <td style={{color:st.age>24 ? "red":"black"}}>{st.age}</td>
+                            <td style={{backgroundColor:st.marks>80 && "yellow"}}>{st.marks}</td>
                             <td>{st.city}</td>
                             <td>{st.gender}</td>
                         </tr>
