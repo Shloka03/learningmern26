@@ -24,6 +24,10 @@ import { HomeComponent } from './components/HomeComponent';
 import { RecentlyAdded } from './components/RecentlyAdded';
 import { MyList } from './components/MyList';
 import { Categories } from './components/Categories';
+import { ErrorNotFound } from './components/ErrorNotFound';
+import { Watch } from './components/Watch';
+import { Teams } from './components/Teams';
+import { TeamDetail } from './components/TeamDetail';
 
 function App() {
   
@@ -39,6 +43,12 @@ function App() {
             <Route path='/recentlyadded' element={<RecentlyAdded />}></Route>
             <Route path='/mylist' element={<MyList />}></Route>
             <Route path='/categories' element={<Categories />}></Route>
+            <Route path='/watch/:name' element={<Watch />}></Route>
+            <Route path='/teams' element={<Teams />}></Route>
+            <Route path='/teamdetail/:name' element={<TeamDetail />}></Route>
+
+            
+            <Route path='/*' element={<ErrorNotFound />}></Route>
 
             <Route path='/' element={<HomeComponent />}></Route>
             
