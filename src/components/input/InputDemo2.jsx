@@ -32,9 +32,7 @@ export const InputDemo2 = () => {
         setgender(event.target.value)
     }
 
-    const submitHandler = () => {
-        setIsSubmitted(true)   
-    }
+    
 
      const countryHandler = (event) => {
         const selectedcountry = event.target.value
@@ -49,6 +47,9 @@ export const InputDemo2 = () => {
         
         setAvailableStates(countryObj ? countryObj.states : [])
         setStateName("")
+    }
+    const submitHandler = () => {
+        setIsSubmitted(true)   
     }
 
     
