@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 export const FormDemo4 = () => {
      const {register,handleSubmit,formState: { errors },watch} = useForm({ mode: "onChange" });
 
-  const password = watch("password") //input... password == {...re("password")}
+  const password = watch("password")
   console.log("watching...",password)
 
   const validationSchema = {
