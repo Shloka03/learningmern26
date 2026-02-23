@@ -46,6 +46,13 @@ import { PractiseForm1 } from './components/form/PractiseForm1';
 import { PractiseForm2 } from './components/form/PractiseForm2';
 import { PractiseForm3 } from './components/form/PractiseForm3';
 import { FormDemo6 } from './components/form/FormDemo6';
+import { ApiDemo1 } from './components/api/ApiDemo1';
+import { ApiDemo2 } from './components/api/ApiDemo2';
+import { ApiDemo3 } from './components/api/ApiDemo3';
+import { ApiDemo4 } from './components/api/ApiDemo4';
+import { ApiDemo5 } from './components/api/ApiDemo5';
+import { MovieDetail } from './components/api/MovieDetail';
+import { ApiDemo6 } from './components/api/ApiDemo6';
 
 
 function App() {
@@ -83,6 +90,14 @@ function App() {
             <Route path='/practiseform2' element={<PractiseForm2 />}></Route>
             <Route path='/practiseform3' element={<PractiseForm3 />}></Route>
             <Route path='/formdemo6' element={<FormDemo6 />}></Route>
+            <Route path='/apidemo1' element={<ApiDemo1 />}></Route>
+            <Route path='/apidemo2' element={<ApiDemo2 />}></Route>
+            <Route path='/apidemo3' element={<ApiDemo3 />}></Route>
+            <Route path='/apidemo4' element={<ApiDemo4 />}></Route>
+            <Route path='/apidemo5' element={<ApiDemo5 />}></Route>
+            <Route path="/moviedetail/:id"element={<MovieDetail/>}></Route>
+            <Route path='/apidemo6' element={<ApiDemo6 />}></Route>
+
 
             <Route path='/*' element={<ErrorNotFound />}></Route>
 
