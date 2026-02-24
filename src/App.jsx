@@ -53,6 +53,9 @@ import { ApiDemo4 } from './components/api/ApiDemo4';
 import { ApiDemo5 } from './components/api/ApiDemo5';
 import { MovieDetail } from './components/api/MovieDetail';
 import { ApiDemo6 } from './components/api/ApiDemo6';
+import { PractiseApi1 } from './components/api/PractiseApi1';
+import { PractiseApi2 } from './components/api/PractiseApi2';
+import { ApiPostDemo1 } from './components/api/ApiPostDemo1';
 
 
 function App() {
@@ -97,6 +100,10 @@ function App() {
             <Route path='/apidemo5' element={<ApiDemo5 />}></Route>
             <Route path="/moviedetail/:id"element={<MovieDetail/>}></Route>
             <Route path='/apidemo6' element={<ApiDemo6 />}></Route>
+            <Route path='/pracapi1' element={<PractiseApi1 />}></Route>
+            <Route path='/pracapi2' element={<PractiseApi2 />}></Route>
+            <Route path='/apipost1' element={<ApiPostDemo1 />}></Route>
+
 
 
             <Route path='/*' element={<ErrorNotFound />}></Route>
